@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css'
 import Nav from './components/Nav'
-import Report from "./pages/Report";
-import Predict from "./pages/Predict"
+import Report from "./pages/Report/Report";
+import Predict from "./pages/Prediction/Predict"
 function App() {
 
   return (
