@@ -3,8 +3,11 @@ import "./Report.css"
 import Nav from "../../components/Nav"
 const Report = () => {
   return (
-    <div className='true'>
+    <div>
       <Nav/>
+      <div className="test">
+        <div className="logo">LOGO</div>
+      </div>
     </div>
   )
 }
