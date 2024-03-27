@@ -1,23 +1,19 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css'
 import Nav from './components/Nav'
-import Report from "./pages/Report/Report";
+import Report from "./pages/Reportpage/Report";
 import Predict from "./pages/Prediction/Predict"
 function App() {
-
   return (
-    <>
-    <BrowserRouter>
+    <div className="App">
+      <Nav/>
       <Routes>
-        <Route path="/" element={<Predict />}>
-          <Route index element={<Predict/>} />
-          <Route path="report" element={<Report />} />
-        </Route>
+        <Route path='/' exact Component={Predict}/>
+        <Route path='/about' exact Component={Report}/>
       </Routes>
-    </BrowserRouter>
       
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
